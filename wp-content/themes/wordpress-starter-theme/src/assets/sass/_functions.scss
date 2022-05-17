@@ -1,0 +1,32 @@
+// SASS Helper functions
+
+// Fluid Font Size
+// https://habrahabr.ru/post/310186/
+// helper function, that strips units (12px => 12)
+@function strip-unit($number) {
+    @if type-of($number) == 'number' and not unitless($number) {
+        @return $number / ($number * 0 + 1);
+    }
+
+    @return $number;
+}
+
+// helper function, that calculates fluid font size
+// $f-min - min font size
+// $f-max - max font size
+// $w-min - min window width
+// $w-max - max window width
+// $units - measure units (e.x. px, em, rem, vw)
+@function calcFluidFontSize($fMin, $fMax, $wMin, $wMax, $units: px) {
+    $fMin: strip-unit($fMin);
+    $fMax: strip-unit($fMax);
+    $wMin: strip-unit($wMin);
+    $wMax: strip-unit($wMax);
+
+    $k: ($fMax - $fMin) / ($wMax - $wMin);
+    $b: $fMin - $k * $wMin;
+
+    $b: $b + $units;
+
+    @return calc(#{$k} * 100vw + #{$b});
+}
