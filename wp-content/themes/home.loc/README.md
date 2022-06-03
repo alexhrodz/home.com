@@ -10,9 +10,6 @@
 ```bash
 npm install
 ```
-
-
-
  или
 ```bash
 yarn install
