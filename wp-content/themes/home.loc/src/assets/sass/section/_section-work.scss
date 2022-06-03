@@ -1,0 +1,30 @@
+.s-work {
+    padding: 70px 0;
+    text-align: center;
+    &__title {
+        margin-bottom: 45px;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 30px;
+
+        flex-direction: row-reverse;
+        @media (min-width: 576px) {
+            justify-content: space-between;
+            text-align: left;
+            & > div {
+                width: 48%;
+            }
+            &:nth-child(2n+1) {
+                flex-direction: row;
+            }
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+}

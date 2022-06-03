@@ -1,0 +1,21 @@
+// Кнопки
+
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    background: none;
+    outline: none;
+    border: 1px solid $linkColor;
+    border-radius: 20px;
+    padding: 8px 25px;
+    //background-color: #000;
+    //text-transform: uppercase;
+    color: $linkColor;
+}
+
+.btn-color {
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #333;
+    box-shadow: 0 10px 10px 0 #333;
+}

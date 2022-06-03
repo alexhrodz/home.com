@@ -1,0 +1,25 @@
+.s-advantages {
+    background-color: #55b3f3;
+    padding: 70px 0;
+    text-align: center;
+    &__img {
+        height: 150px;
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        @media (min-width: 576px) {
+            justify-content: space-between;
+            .s-advantages__item {
+                width: 29%;
+            }
+        }
+    }
+
+}

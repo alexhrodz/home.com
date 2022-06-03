@@ -1,0 +1,34 @@
+.page-header {
+    position: relative;
+}
+
+.header__wrrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+
+    .nav__wrrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main-nav__list {
+        display: flex;
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        //.sub-menu {
+        //    display: none;
+        //}
+
+    }
+
+    .logo {
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,18 @@
+.section-customer {
+
+    padding: 70px 0;
+    text-align: center;
+
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        padding: 0 25px;
+        a {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
